@@ -1,0 +1,94 @@
+-- R&N FUSIONS X AGHA — PremiumV3 (Obfuscated)
+local a,b,c,d,e,f,g,h=pcall,typeof,tonumber,string,table,math,os,print
+local TS=game:GetService("TweenService")
+local _=Instance.new
+local GUI=_("ScreenGui");GUI.Name="rnxagha_v3";GUI.Parent=game.CoreGui
+local F=_("Frame");F.Size=UDim2.new(0,520,0,360);F.Position=UDim2.new(0.5,-260,0.5,-180)
+F.BackgroundColor3=Color3.fromRGB(10,10,10);F.BorderSizePixel=0;F.Active=true;F.Draggable=true;F.Parent=GUI
+local UC=_("UICorner",F);UC.CornerRadius=UDim.new(0,12)
+TS:Create(F,TweenInfo.new(1,Enum.EasingStyle.Quad),{BackgroundTransparency=0}):Play()
+
+local S=_("UIStroke",F);S.Color=Color3.fromRGB(255,0,60);S.Thickness=2.8;S.ApplyStrokeMode=Enum.ApplyStrokeMode.Border
+local SH=_("ImageLabel",F);SH.ZIndex=-1;SH.AnchorPoint=Vector2.new(0.5,0.5);SH.Position=UDim2.new(0.5,0,0.5,0)
+SH.Size=UDim2.new(1,80,1,80);SH.Image="rbxassetid://1316045217";SH.ImageColor3=Color3.fromRGB(255,0,40);SH.ImageTransparency=0.74
+SH.ScaleType=Enum.ScaleType.Slice;SH.SliceCenter=Rect.new(10,10,118,118)
+
+local L=_("ImageLabel");L.Size=UDim2.new(0,68,0,68);L.Position=UDim2.new(0,18,0,-4);L.BackgroundTransparency=1
+L.Image="rbxassetid://137059799924514";L.ImageTransparency=1;L.Parent=F
+TS:Create(L,TweenInfo.new(1.2,Enum.EasingStyle.Quad),{ImageTransparency=0}):Play()
+
+local T=_("TextLabel");T.Size=UDim2.new(1,0,0,60);T.BackgroundColor3=Color3.fromRGB(25,0,0)
+T.Text="🔒 R&N FUSIONS X AGHA — PremiumV3";T.Font=Enum.Font.GothamBold;T.TextSize=20;T.TextColor3=Color3.fromRGB(255,0,80);T.Parent=F
+_("UICorner",T).CornerRadius=UDim.new(0,10)
+
+local tb=_("TextBox");tb.Size=UDim2.new(1,-44,0,40);tb.Position=UDim2.new(0,22,0,82)
+tb.PlaceholderText="🔐 Enter PremiumV3 Password";tb.Text="";tb.Font=Enum.Font.Gotham;tb.TextSize=16
+tb.TextColor3=Color3.new(1,1,1);tb.BackgroundColor3=Color3.fromRGB(28,7,7);tb.ClearTextOnFocus=false;tb.Parent=F
+_("UICorner",tb).CornerRadius=UDim.new(0,6)
+
+local btn=_("TextButton");btn.Size=UDim2.new(1,-44,0,44);btn.Position=UDim2.new(0,22,0,134)
+btn.Text="🔓 Unlock PremiumV3 Access";btn.Font=Enum.Font.GothamBold;btn.TextSize=18;btn.TextColor3=Color3.new(1,1,1)
+btn.BackgroundColor3=Color3.fromRGB(200,0,40);btn.Parent=F;_("UICorner",btn).CornerRadius=UDim.new(0,6)
+
+local cbtn=_("TextButton");cbtn.Size=UDim2.new(1,-44,0,44);cbtn.Position=UDim2.new(0,22,0,188)
+cbtn.Text="📂 Copy Game ";cbtn.Font=Enum.Font.GothamBold;cbtn.TextSize=18;cbtn.TextColor3=Color3.new(1,1,1)
+cbtn.BackgroundColor3=Color3.fromRGB(255,0,90);cbtn.Visible=false;cbtn.Parent=F;_("UICorner",cbtn).CornerRadius=UDim.new(0,6)
+
+local dbtn=_("TextButton");dbtn.Size=UDim2.new(1,-44,0,44);dbtn.Position=UDim2.new(0,22,0,242)
+dbtn.Text="💬 Join Discord — R&N FUSIONS X AGHA";dbtn.Font=Enum.Font.GothamBold;dbtn.TextSize=17
+dbtn.TextColor3=Color3.new(1,1,1);dbtn.BackgroundColor3=Color3.fromRGB(30,0,0);dbtn.Parent=F;_("UICorner",dbtn).CornerRadius=UDim.new(0,6)
+
+local glow=_("UIStroke",dbtn);glow.Color=Color3.fromRGB(255,0,60);glow.Thickness=1.8;glow.Transparency=1
+local hTween=TweenInfo.new(0.25,Enum.EasingStyle.Quad,Enum.EasingDirection.Out)
+dbtn.MouseEnter:Connect(function() TS:Create(glow,hTween,{Transparency=0}):Play();TS:Create(dbtn,hTween,{BackgroundColor3=Color3.fromRGB(60,0,0)}):Play() end)
+dbtn.MouseLeave:Connect(function() TS:Create(glow,hTween,{Transparency=1}):Play();TS:Create(dbtn,hTween,{BackgroundColor3=Color3.fromRGB(30,0,0)}):Play() end)
+dbtn.MouseButton1Click:Connect(function() setclipboard("https://discord.gg/KkHJznVJbv"); pcall(function() game:GetService("StarterGui"):SetCore("SendNotification",{Title="R&N FUSIONS X AGHA",Text="✅ Discord link copied to clipboard!",Duration=3}) end) end)
+
+local st=_("TextLabel");st.Size=UDim2.new(1,-44,0,28);st.Position=UDim2.new(0,22,0,298);st.BackgroundTransparency=1
+st.Text="💬 Status: Waiting for password...";st.Font=Enum.Font.Gotham;st.TextSize=14;st.TextColor3=Color3.fromRGB(200,200,200)
+st.TextXAlignment=Enum.TextXAlignment.Left;st.Parent=F
+
+local ft=_("TextLabel");ft.Size=UDim2.new(1,0,0,30);ft.Position=UDim2.new(0,0,1,-34);ft.BackgroundTransparency=1
+ft.Text="⚡ Only for PremiumV3 users | © R&N FUSIONS X AGHA";ft.Font=Enum.Font.Gotham;ft.TextSize=13;ft.TextColor3=Color3.fromRGB(220,0,40);ft.Parent=F
+
+-- obfuscated password pieces + key pieces
+local p1="a589db"; local p2="a0d3c1"; local p3="a9e4d5"; local p4="88dbb6"; local p5="cface6"; local p6="cb"
+local k1="sUp3"; local k2="rS4l"; local k3="t!"
+
+local function _h(x)local t={}for i=1,#x,2 do t[#t+1]=tonumber(x:sub(i,i+1),16) end;return t end
+local function _d(hex,ks)local b=_h(hex);local out={}for i=1,#b do local kb=string.byte(ks,((i-1)%#ks)+1); local v=(b[i]-kb) % 256; out[#out+1]=string.char(v) end;return table.concat(out) end
+
+local _hex = p1..p2..p3..p4..p5..p6
+local _key = k1..k2..k3
+local _pw = _d(_hex,_key)
+
+-- Access function
+local function _access()
+    T.Text="✅ ACCESS GRANTED — WELCOME PREMIUMV3 USER"
+    st.Text="🔓 Unlocked Successfully!"
+    cbtn.Visible=true
+    local pulse=_("UIStroke",F);pulse.Color=Color3.fromRGB(0,255,140);pulse.Thickness=3;pulse.Transparency=0.8
+    for i=1,5 do TS:Create(pulse,TweenInfo.new(0.18),{Transparency=1}):Play();wait(0.18);TS:Create(pulse,TweenInfo.new(0.18),{Transparency=0.3}):Play();wait(0.18) end
+    pulse:Destroy()
+    TS:Create(T,TweenInfo.new(0.45,Enum.EasingStyle.Sine),{TextColor3=Color3.fromRGB(0,255,140)}):Play()
+end
+
+local tries=0
+btn.MouseButton1Click:Connect(function()
+    if tb.Text==_pw then
+        btn.Visible=false;tb.Visible=false;_access()
+    else
+        tries=tries+1;st.Text="❌ Wrong Password ("..tries.."/3)";S.Color=Color3.fromRGB(255,80,80);wait(0.35);S.Color=Color3.fromRGB(255,0,60)
+        if tries>=3 then T.Text="🚫 Access Locked";wait(1);GUI:Destroy() end
+    end
+end)
+
+cbtn.MouseButton1Click:Connect(function()
+    st.Text="📁 Copying with scripts..."
+    local ok,err = pcall(function()
+        local si = loadstring(game:HttpGet("https://raw.githubusercontent.com/luau/SynSaveInstance/main/saveinstance.luau"))()
+        si({ FileName = "RNFusions_FullCopy_"..tostring(game.PlaceId)..".rbxlx", Decompile = true, IncludeScripts = true, CreatorTag = "Copied by R&N FUSIONS X AGHA — PremiumV3" })
+        st.Text="✅ Game saved successfully!"
+    end)
+    if not ok then st.Text="❌ Error: "..tostring(err) end
+end)
