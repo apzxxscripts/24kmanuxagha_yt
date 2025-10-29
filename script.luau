@@ -8,7 +8,7 @@ local TweenService = game:GetService("TweenService")
 -- ===== Obfuscation helpers (Additive + Hex encode)
 -- We store the password as hex produced by: (byte + keyByte) % 256
 -- Decoder below recovers the original password at runtime.
-local encoded_password_hex = "a589dba0d3c1a9e4d588dbb6cface6cb" -- encoded "24kmanuxagha_ytx"
+local encoded_password_hex = "a589dba0d3c1a9e4d588dbb6cface6cb" -- encoded
 local _secret_key = "sUp3rS4lt!" -- keep this secret (required to decode)
 
 local function hexToBytes(hex)
