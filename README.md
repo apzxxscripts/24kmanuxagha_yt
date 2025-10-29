@@ -47,7 +47,7 @@ Full **SaveInstance support** — includes scripts, decompilation, and creator t
 
 ## 🖥️ How to Use
 
-1. Copy the full script from [`script`](./script.luau)
+1. Copy the full script from [`script`](./script.lua)
 2. Execute it in your Roblox executor (e.g., Synapse, KRNL, Fluxus)
 3. Enter the correct **PremiumV3 password**
 4. Once access is granted:
