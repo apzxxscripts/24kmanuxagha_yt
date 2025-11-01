@@ -9,7 +9,6 @@ local RunService = game:GetService("RunService")
 local Debris = game:GetService("Debris")
 
 -- ===== Obfuscation helpers (Additive + Hex encode)
--- Password (hidden): "24kmanuxagha_ytx"
 local encoded_password_hex = "a589dba0d3c1a9e4d588dbb6cface6cb" -- encoded (do NOT change unless you encode another)
 local _secret_key = "sUp3rS4lt!" -- keep secret
 
